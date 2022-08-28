@@ -10,6 +10,7 @@ DNSC 6301 Group Project - Group 16
 * **License**: MIT
 * **Model implementation code**: [DNSC_6301_Example_Project.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project/blob/main/DNSC_6301_Example_Project.ipynb)
 
+
 ### Intended Use
 * **Primary intended uses**: This is an example use case with the intend to be used for determining eligibility for a credit line increase. This model uses probability of default classifier model. 
 * **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
