@@ -14,7 +14,7 @@ DNSC 6301 Group Project - Group 16
 ### Intended Use
 * **Primary intended uses**: This is an example use case with the intend to be used for determining eligibility for a credit line increase. This model uses probability of default classifier model. 
 * **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
-* **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
+* **Out-of-scope use cases**: Only use for educational purposes.
 
 ### Training Data
 
