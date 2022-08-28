@@ -71,22 +71,24 @@ DecisionTreeClassifier(max_depth = depth + 1, random_state=SEED)
 
 #### Histogram
 ![Histogram](Histogram.png)
+* **Interpretation**: From histograms we could figure out which columns are numeric and which columns are categorical. For example, our target variable, Delinq_Next, has only 2 lines, which means it either is those who paid on time or late payments. From the graphs above, we can also see that the bill amounts and limit balance are exponentially distributed. 
+
 
 #### Correlation Heatmap
-![Correlation Heatmap](Correlation heatmap.png)
+![Correlation Heatmap](Correlation%20heatmap.png)
+* **Interpretation**: In the correlation heatmap above, lighter colors mean a positive correlation, while darker colors mean there is a negative correlation. An observation we can make from this plot is that our target variable, Delinq_Next, is negatively correlated with Race. This could mean that the outcome for people in different race groups is not as positive as with other people. 
+
 
 #### Iteration plot for Depth Vs Training and Validation AUC
-![Iteration Plot for Depth Vs Training and Validation AUC](Iteration plot for depth vs training and validation AUC.png)
+![Iteration Plot for Depth Vs Training and Validation AUC](Iteration%20plot%20for%20depth%20vs%20training%20and%20validation%20AUC.png)
+* **Interpretation**: AUC is a performance quality measure. Bigger the AUC the better the model is. If we look at the training AUC, the deeper the tree we grow, the higher the AUC gets. Which means the training data set has started to memorize the data. After 6 depths in validation data, AUC starts going down which means the performance of the model is getting worse. Model starts to overfit the data. 
+
 
 #### Plot for Variable Importances
-![Plot for variable Importances](Plot for variable importances .png)
+![Plot for variable Importances](Plot%20for%20variable%20importances%20.png)
+* **Interpretation**: This graph shows that Pay_0 is the most important payment status. This means that the model is too dependent on the Pay_0 variable. 
+
 
 #### Iteration Plot for the final model
-![Iteration plot for the final Model](Final Model - Iteration Plot.png)
-
-
-
-
-
-
-
+![Iteration plot for the final Model](Final%20Model%20-%20Iteration%20Plot.png)
+* **Interpretation**: 
