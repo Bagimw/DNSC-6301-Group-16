@@ -69,5 +69,12 @@ DecisionTreeClassifier(max_depth = depth + 1, random_state=SEED)
 | 0.833205 | 0.85 | 1.00 | 1.02 |
 
 #### Correlation Heatmap
-![Correlation Heatmap](download.png)
+![Histogram](Histogram.png)
+![Correlation Heatmap](Correlation heatmap.png)
+![Iteration Plot for Depth Vs Training and Validation AUC](Iteration plot for depth vs training and validation AUC.png)
+![Plot for variable Importances](Plot for variable importances .png)
+
+
+
+
 
