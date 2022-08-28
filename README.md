@@ -8,7 +8,7 @@ DNSC 6301 Group Project - Group 16
 * **Model date**: August, 2022
 * **Model version**: 1.0
 * **License**: MIT
-* **Model implementation code**: [DNSC_6301_Example_Project.ipynb](https://github.com/jphall663/GWU_DNSC_6301_project/blob/main/DNSC_6301_Example_Project.ipynb)
+* **Model implementation code**: [DNSC 6301 Project Group 16.ipynb](https://colab.research.google.com/drive/1y0tNc3t74tLrDRhUIgnz1cV4cyd-wCKS?usp=sharing)
 
 
 ### Intended Use
