@@ -63,7 +63,7 @@ DecisionTreeClassifier(max_depth = depth + 1, random_state=SEED)
 
 | Trainig AUC | Validation AUC | Testing AUC |
 | ------ | ------- | -------- |
-| 0.783722 | 0749610  | 0.7438 |
+| 0.783722 | 0.749610  | 0.7438 |
 
 | Hispanic -to-White AIR | Black-to-White AIR | Asian-to-White AIR | Female-to-White AIR |
 | ------ | ------ | ------ | ------ |
