@@ -91,4 +91,4 @@ DecisionTreeClassifier(max_depth = depth + 1, random_state=SEED)
 
 #### Iteration Plot for the final model
 ![Iteration plot for the final Model](Final%20Model%20-%20Iteration%20Plot.png)
-* **Interpretation**: 
+* **Interpretation**: The fairness of the model starts off well, however, as we make the tree complicated, the fairness drops below 0.8. After 4 depths, the AIR value increases again above 0.8 and it seems that between depth 6 and 7 is a good choice for the final model. 
