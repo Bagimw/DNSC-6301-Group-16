@@ -9,7 +9,7 @@
 * **Model version**: 1.0
 * **License**: MIT
 * **Model implementation code**: [DNSC 6301 Project Group 16.ipynb](DNSC_6301_Project_Group_16.ipynb)
-* **Primary intended uses**: This is an example use case with the intend to be used for determining eligibility for a credit line increase. This model uses probability of default classifier model. 
+* **Primary intended uses**: This is an example use case with the intend to be used for determining eligibility for a credit line increase. This example uses probability of default classifier model. 
 * **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
 * **Out-of-scope use cases**: Only use for educational purposes.
 
@@ -95,14 +95,14 @@ DecisionTreeClassifier(max_depth = depth + 1, random_state=SEED)
 
 ### Ethical Considerations
 **Potential negative impacts of using the model**
-* **Math or software problems**: If we change the  percentage of training data,  validation data and testing data, we will get different results. We can’t get a most accurate model. In this model, we use 50% training data, 25% validation data and 25% testing data.
+* **Math or software problems**: If we change the  percentage of training data,  validation data and testing data, we will get different results. We can’t get a most accurate model. 
 
 * **Real-world risks**: One issue with this model/algorithm is that, the target variable Delinq_next, returns a binary result, whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time. A binary result is not that useful in determining the credit line increase of a person.
 
 **potential uncertainties relating to the impacts of using the model**
-* **Math or software problems**:For this model, there is not enough  data for this model which might make this model become more random.   The importance of Pay_0 is way over than the other variables
+* **Math or software problems**:For this model, there is not enough  data, which might make this model become more random. The importance of Pay_0 is way over than the other variables.
 
-* **Real-world risks**: In the real world,  if this model is majorly focused on the last month payment, it will give negative effective for those people who just had maybe had  bad performance on a temporary short time, but their credit score might will stop increase.
+* **Real-world risks**: In the real world,  if this model is majorly focused on the last month payment, it will give negative effective for those people who just had maybe a bad performance on a temporary short time, but their credit score might not increase.
 
 **Potential Unexpected results**
 * Data bias: In this model the history payment, previous payment and future payment, they have a lot of weight in this model. In this case, they will cause the result to be inaccurate because of the data bias. We should consider the bias when we build the model. 
