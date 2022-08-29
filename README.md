@@ -9,7 +9,7 @@
 * **Model version**: 1.0
 * **License**: MIT
 * **Model implementation code**: [DNSC 6301 Project Group 16.ipynb](DNSC_6301_Project_Group_16.ipynb)
-* **Primary intended uses**: This is an example use case with the intend to be used for determining eligibility for a credit line increase. This example uses probability of default classifier model. 
+* **Primary intended uses**: This is an example use case with the intend to be used for determining eligibility for a credit line increase. This model is an example probability of default classifier.
 * **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
 * **Out-of-scope use cases**: Only use for educational purposes.
 
