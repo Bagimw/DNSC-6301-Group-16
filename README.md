@@ -71,6 +71,7 @@ DecisionTreeClassifier(max_depth = depth + 1, random_state=SEED)
 | ------ | ------ | ------ | ------ |
 | 0.833205 | 0.85 | 1.00 | 1.02 |
 
+### Plots
 #### Histogram
 ![Histogram](Histogram.png)
 * **Interpretation**: From histograms we could figure out which columns are numeric and which columns are categorical. For example, our target variable, Delinq_Next, has only 2 lines, which means it either is those who paid on time or late payments. From the graphs above, we can also see that the bill amounts and limit balance are exponentially distributed. 
