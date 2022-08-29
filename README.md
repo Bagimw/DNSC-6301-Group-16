@@ -67,7 +67,7 @@ DecisionTreeClassifier(max_depth = depth + 1, random_state=SEED)
 | ------ | ------- | -------- |
 | 0.783722 | 0.749610  | 0.7438 |
 
-| Hispanic -to-White AIR | Black-to-White AIR | Asian-to-White AIR | Female-to-White AIR |
+| Hispanic -to-White AIR | Black-to-White AIR | Asian-to-White AIR | Female-to-Male AIR |
 | ------ | ------ | ------ | ------ |
 | 0.833205 | 0.85 | 1.00 | 1.02 |
 
