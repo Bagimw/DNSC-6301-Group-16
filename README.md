@@ -1,17 +1,14 @@
 # DNSC-6301-Group-16
-DNSC 6301 Group Project - Group 16
+
 # Credit Line Increase Model Card
 
 ### Basic Information
 
-* **Person or organization developing model**: Zhipeng Zhao, `micheal@gmail.com`, Bagya Widanagamage, `bagya@gmail.com`, Chao Zhang, `chao@gmail.com`
+* **Person or organization developing model**: Zhipeng Zhao, `micheal@abc.com`, Bagya Widanagamage, `bagya@abc.com`, Chao Zhang, `chao@abc.com`
 * **Model date**: August, 2022
 * **Model version**: 1.0
 * **License**: MIT
 * **Model implementation code**: [DNSC 6301 Project Group 16.ipynb](https://colab.research.google.com/drive/1y0tNc3t74tLrDRhUIgnz1cV4cyd-wCKS?usp=sharing)
-
-
-### Intended Use
 * **Primary intended uses**: This is an example use case with the intend to be used for determining eligibility for a credit line increase. This model uses probability of default classifier model. 
 * **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
 * **Out-of-scope use cases**: Only use for educational purposes.
@@ -55,11 +52,14 @@ DNSC 6301 Group Project - Group 16
   * Python version: 3.7.13 
   * sklearn version: 1.0.2
 
-* **Hyperparameters or other settings of your model**: 
+* **Hyperparameters or other settings of the model**: 
 ```
 DecisionTreeClassifier(max_depth = depth + 1, random_state=SEED)
 ```
 ### Quantitative Analysis
+* **Metrics used to evaluate the final model**: AUC and AIR
+
+* **Final metrics values**:
 
 | Trainig AUC | Validation AUC | Testing AUC |
 | ------ | ------- | -------- |
@@ -92,3 +92,17 @@ DecisionTreeClassifier(max_depth = depth + 1, random_state=SEED)
 #### Iteration Plot for the final model
 ![Iteration plot for the final Model](Final%20Model%20-%20Iteration%20Plot.png)
 * **Interpretation**: The fairness of the model starts off well, however, as we make the tree complicated, the fairness drops below 0.8. After 4 depths, the AIR value increases again above 0.8 and it seems that between depth 6 and 7 is a good choice for the final model. 
+
+### Ethical Considerations
+**Potential negative impacts of using the model**
+* **Math or software problems**: If we change the  percentage of training data,  validation data and testing data, we will get different results. We can’t get a most accurate model. In this model, we use 50% training data, 25% validation data and 25% testing data.
+
+* **Real-world risks**: One issue with this model/algorithm is that, the target variable Delinq_next, returns a binary result, whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time. A binary result is not that useful in determining the credit line increase of a person.
+
+**potential uncertainties relating to the impacts of using the model**
+* **Math or software problems**:For this model, there is not enough  data for this model which might make this model become more random.   The importance of Pay_0 is way over than the other variables
+
+* **Real-world risks**: In the real world,  if this model is majorly focused on the last month payment, it will give negative effective for those people who just had maybe had  bad performance on a temporary short time, but their credit score might will stop increase.
+
+**Potential Unexpected results**
+* Data bias: In this model the history payment, previous payment and future payment, they have a lot of weight in this model. In this case, they will cause the result to be inaccurate because of the data bias. We should consider the bias when we build the model. 
