@@ -63,7 +63,7 @@ DecisionTreeClassifier(max_depth = depth + 1, random_state=SEED)
 
 * **Final metrics values**:
 
-| Trainig AUC | Validation AUC | Testing AUC |
+| Training AUC | Validation AUC | Testing AUC |
 | ------ | ------- | -------- |
 | 0.783722 | 0.749610  | 0.7438 |
 
